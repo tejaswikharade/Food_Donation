@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {font-family: Arial, Helvetica, sans-serif; padding-right: 200px; padding-left: 200px;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+<body>
+
+
+
+  <form  action="donor.php" method="POST" enctype="multipart/form-data" >
+    <div class="container">
+      <h1>Donation</h1>
+      <p>Please fill in this form </p>
+      <hr>
+      <label ><b>Phone number</b></label>
+      <input type="text" placeholder="Enter Phone number" name="phone"  required>
+
+      <label ><b>Type of food</b></label>
+      <input type="text" placeholder="Enter type" name="type" required>
+
+      <label ><b>Amount of food</b></label>
+      <input type="text" placeholder="Amount"  name="amount" required>
+      <label ><b>Location</b></label>
+      <input type="text" placeholder="location"  name="location" required>
+       <!--
+      <label ><b>Upload an Image if available</b></label><br>
+      <input type="file" name="img"><br><br>-->
+     
+
+      
+      
+      <p>By Donating food you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+
+        <button type="submit" class="signupbtn">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+</body>
